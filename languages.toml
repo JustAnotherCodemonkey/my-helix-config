@@ -1,12 +1,7 @@
-# For some reason, typos doesn't seem to be working.
-# I got the typos stuff from a reddit comment.
-[language-server.typos]
-command = "typos-lsp"
-
 [[language]]
 name = "rust"
 auto-format = false
-language-servers = ["rust-analyzer", "typos"]
+language-servers = ["rust-analyzer"]
 
 [language-server.rust-analyzer.config.completion]
 callable = { snippets = "add_parentheses" }
