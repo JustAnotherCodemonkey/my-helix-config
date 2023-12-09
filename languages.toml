@@ -1,0 +1,25 @@
+# For some reason, typos doesn't seem to be working.
+# I got the typos stuff from a reddit comment.
+[language-server.typos]
+command = "typos-lsp"
+
+[[language]]
+name = "rust"
+auto-format = false
+language-servers = ["rust-analyzer", "typos"]
+
+[language-server.rust-analyzer.config.completion]
+callable = { snippets = "add_parentheses" }
+fullFunctionSignatures = { enable = true }
+
+[language-server.rust-analyzer.config.inlayHints]
+maxLength = 7
+lifetimeElisionHints = { enable = true, useParameterNames = false }
+
+[[language]]
+name = "c"
+indent = { unit = "    ", tab-width = 4 }
+
+[[language]]
+name = "cpp"
+indent = { unit = "    ", tab-width = 4 }

@@ -1,0 +1,11 @@
+theme = "boo_berry"
+
+[editor]
+bufferline = "always"
+idle-timeout = 0
+middle-click-paste = false
+scrolloff = 2
+
+[editor.indent-guides]
+render = true
+character = "│"
