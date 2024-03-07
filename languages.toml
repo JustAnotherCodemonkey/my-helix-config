@@ -1,7 +1,7 @@
 [[language]]
 name = "rust"
 auto-format = false
-language-servers = ["rust-analyzer"]
+language-servers = [ "rust-analyzer", "ltex-ls" ]
 
 [language-server.rust-analyzer.config.completion]
 callable = { snippets = "add_parentheses" }
@@ -11,6 +11,9 @@ fullFunctionSignatures = { enable = true }
 maxLength = 7
 lifetimeElisionHints = { enable = true, useParameterNames = false }
 
+[language-server.ltex-ls]
+command = "ltex-ls"
+
 [[language]]
 name = "c"
 indent = { unit = "    ", tab-width = 4 }
@@ -18,3 +21,7 @@ indent = { unit = "    ", tab-width = 4 }
 [[language]]
 name = "cpp"
 indent = { unit = "    ", tab-width = 4 }
+
+[[language]]
+name = "markdown"
+language-servers = [ "ltex-ls" ]
